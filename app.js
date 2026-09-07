@@ -21,4 +21,12 @@ if (articlePicker) {
   });
 }
 
+const petitionPicker = document.querySelector('.petition-picker');
+if (petitionPicker) {
+  petitionPicker.addEventListener('submit', (event) => {
+    event.preventDefault();
+    window.location.href = document.querySelector('#petition-select').value;
+  });
+}
+
 document.querySelector('#year').textContent = new Date().getFullYear();
