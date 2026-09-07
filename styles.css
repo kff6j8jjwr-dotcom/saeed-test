@@ -25,3 +25,17 @@ footer { display:grid; grid-template-columns:1.3fr 1fr; gap:30px; padding:75px m
 .article-submission p:not(.eyebrow) { max-width:500px; margin:8px 0 0; color:#b7c8d4; font-size:14px; line-height:1.6; }
 .button-outline-light { flex:none; border:1px solid rgba(255,255,255,.7); color:#fff; }
 @media(max-width:760px) { .article-submission { align-items:flex-start; flex-direction:column; padding:24px; } }
+
+/* Reframe the portrait for smaller screens instead of using the desktop crop. */
+@media(max-width:760px) {
+  .hero { min-height:0; }
+  .portrait { background-size:960px auto; background-position:-17px -23px; }
+  .portrait-caption { margin-top:14px; }
+  .portrait-caption h2 { font-size:22px; }
+  .portrait-caption p { font-size:11px; }
+}
+@media(max-width:430px) {
+  .portrait { background-size:845px auto; background-position:-14px -20px; }
+  .portrait-caption { max-width:215px; }
+  .portrait-caption h2 { font-size:20px; }
+}
