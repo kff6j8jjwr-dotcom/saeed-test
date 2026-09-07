@@ -13,4 +13,12 @@ navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click'
   menuButton.textContent = 'Menu';
 }));
 
+const articlePicker = document.querySelector('.article-picker');
+if (articlePicker) {
+  articlePicker.addEventListener('submit', (event) => {
+    event.preventDefault();
+    window.location.href = document.querySelector('#article-select').value;
+  });
+}
+
 document.querySelector('#year').textContent = new Date().getFullYear();
