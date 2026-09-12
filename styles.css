@@ -55,3 +55,26 @@ footer { display:grid; grid-template-columns:1.3fr 1fr; gap:30px; padding:75px m
   .portrait-caption { max-width:215px; }
   .portrait-caption h2 { font-size:20px; }
 }
+
+.featured-articles { color:#fff; background:#0a385a; }
+.featured-articles .section-heading h2 { color:#fff; }
+.featured-article-card { display:grid; grid-template-columns:1fr minmax(260px,.75fr); gap:42px; align-items:center; padding:32px; border:1px solid rgba(255,255,255,.24); background:rgba(3,29,53,.35); }
+.featured-article-card h3 { max-width:590px; font-size:clamp(28px,3vw,42px); line-height:1.08; }
+.featured-article-card p:not(.eyebrow) { color:#c4d3de; font:16px/1.65 "Playfair Display",serif; }
+.featured-article-card .featured-byline { margin:14px 0; color:#f4cf80; font-style:italic; }
+.featured-article-card .button { margin-top:12px; }
+.featured-article-card img { width:100%; box-shadow:0 12px 30px rgba(0,0,0,.25); }
+.health { background:#fff; }
+.health .section-heading h2 { color:var(--navy); }
+.health-links { border-top:1px solid #cdd5dc; }
+.health-links a { display:grid; grid-template-columns:64px 1fr 28px; gap:20px; align-items:center; padding:25px 0; border-bottom:1px solid #cdd5dc; color:var(--navy); text-decoration:none; transition:padding .2s,color .2s; }
+.health-links a:hover { padding-left:10px; color:#9a722b; }
+.health-links span { color:var(--gold); font:italic 18px "Playfair Display",serif; }
+.health-links strong { font:600 25px/1.15 "Playfair Display",serif; }
+.health-links b { font-size:22px; }
+.upcoming-publication { margin-top:43px; padding-top:27px; border-top:1px solid #c9c3b7; }
+.upcoming-publication .eyebrow { margin:0 0 9px; }
+.upcoming-publication h3 { color:var(--navy); font-size:27px; }
+.upcoming-publication a { color:var(--navy); font-size:13px; font-weight:700; }
+.upcoming-publication a:hover { color:#9a722b; }
+@media(max-width:760px) { .featured-article-card { grid-template-columns:1fr; gap:25px; padding:24px; }.health-links a { grid-template-columns:42px 1fr 22px; gap:12px; }.health-links strong { font-size:21px; } }
