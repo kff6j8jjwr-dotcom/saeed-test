@@ -77,4 +77,15 @@ footer { display:grid; grid-template-columns:1.3fr 1fr; gap:30px; padding:75px m
 .upcoming-publication h3 { color:var(--navy); font-size:27px; }
 .upcoming-publication a { color:var(--navy); font-size:13px; font-weight:700; }
 .upcoming-publication a:hover { color:#9a722b; }
+.survey { display:grid; grid-template-columns:1fr minmax(260px,.65fr); gap:8vw; align-items:center; overflow:hidden; color:#fff; background:linear-gradient(120deg,#062b49 15%,#0a385a 100%); }
+.survey-copy { position:relative; z-index:1; }
+.survey-copy h2 { color:#fff; }
+.survey-copy p:not(.section-number):not(.eyebrow) { max-width:570px; color:#d7e1e8; font:17px/1.7 "Playfair Display",serif; }
+.survey-copy .button { margin-top:15px; }
+.survey-mark { position:relative; min-height:300px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.36); background:radial-gradient(circle at center,rgba(215,168,75,.26),transparent 56%); }
+.survey-mark::before,.survey-mark::after { position:absolute; border:1px solid rgba(215,168,75,.6); border-radius:50%; content:""; }
+.survey-mark::before { width:180px; height:180px; }.survey-mark::after { width:245px; height:245px; opacity:.5; }
+.survey-mark span { position:relative; z-index:1; color:#f4cf80; font:600 38px/.9 "Playfair Display",serif; letter-spacing:-.04em; text-align:center; }
+.survey-mark b { position:absolute; right:18px; bottom:13px; color:rgba(255,255,255,.3); font:600 18px "Playfair Display",serif; }
 @media(max-width:760px) { .featured-article-card { grid-template-columns:1fr; gap:25px; padding:24px; }.health-links a { grid-template-columns:42px 1fr 22px; gap:12px; }.health-links strong { font-size:21px; } }
+@media(max-width:760px) { .survey { grid-template-columns:1fr; gap:35px; }.survey-mark { min-height:235px; }.survey-mark::after { width:195px; height:195px; }.survey-mark::before { width:145px; height:145px; } }
