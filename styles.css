@@ -72,6 +72,14 @@ footer { display:grid; grid-template-columns:1.3fr 1fr; gap:30px; padding:75px m
 .health-links span { color:var(--gold); font:italic 18px "Playfair Display",serif; }
 .health-links strong { font:600 25px/1.15 "Playfair Display",serif; }
 .health-links b { font-size:22px; }
+.eobi { color:#fff; background:linear-gradient(120deg,#062b49 15%,#0a385a 100%); }
+.eobi .section-heading h2 { color:#fff; max-width:740px; }
+.eobi-grid { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(250px,.7fr); gap:7vw; align-items:center; }
+.eobi-grid p { max-width:700px; color:#d7e1e8; font:16px/1.7 "Playfair Display",serif; }
+.eobi-grid .lead { color:#fff; }
+.eobi-actions { display:flex; align-items:flex-start; flex-direction:column; gap:14px; }
+.eobi-actions .button { margin:0; }
+@media(max-width:760px) { .eobi-grid { grid-template-columns:1fr; gap:28px; } }
 .upcoming-publication { margin-top:43px; padding-top:27px; border-top:1px solid #c9c3b7; }
 .upcoming-publication .eyebrow { margin:0 0 9px; }
 .upcoming-publication h3 { color:var(--navy); font-size:27px; }
